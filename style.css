@@ -1,0 +1,112 @@
+html {
+    --culoare-unu:#5EB4FF;
+    --culoare-doi:#56CBE8;
+    --culoare-principala:#6CFFF5;
+    --culoare-patru:#56E8B5;
+    --culoare-cinci:#5EFF99;
+    --inaltime-buton:50px;
+}
+
+body {
+    background-color: var(--culoare-principala);
+}
+
+.top {
+    display: flex;
+}
+
+ul.meniu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+    z-index: 10;
+    position: relative;
+}
+
+ul.meniu li {
+    width: 150px;
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: var(--inaltime-buton);
+    border-radius: 12px;
+}
+
+ul.meniu li a {
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--culoare-unu);
+    text-decoration: none;
+    text-align: center;
+    line-height: var(--inaltime-buton);
+    color: black;
+    font-weight: bold;
+}
+
+ul.meniu>li:hover>ul.submeniu {
+    display: block;
+}
+
+ul.submeniu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    height: var(--inaltime-buton);
+    list-style-type: none;
+}
+
+#container {
+    display: grid;
+    grid-template-areas: "p1 p1 p1"
+                         "p3 p2 p4"
+                         "p5 p2 p4"
+                         "p5 p6 p7"
+                         "p8 p8 p8";
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:repeat(5, 1fr);
+    grid-gap:0.5em;
+}
+
+#prezentare {
+    grid-area: p1;
+}
+
+#tabel {
+    grid-area: p2;
+}
+
+#evenimente {
+    grid-area: p3;
+}
+
+#anunturi {
+    grid-area: p4;
+}
+
+#utilizatori {
+    grid-area: p5;
+}
+
+#statistici {
+    grid-area: p6;
+}
+
+#detalii {
+    grid-area: p7;
+}
+
+#diverse {
+    grid-area: p8;
+}
+
+#container section{
+    border:1px solid #030303;
+    padding: 10px;
+}

@@ -2,6 +2,8 @@
 
 <html lang="ro">
 <head>
+    <link rel="stylesheet" href="style.css">
+
     <title> BarcaOnline </title>
     <meta charset="UTF-8">
     <meta name="author" content="Stan Catalin Andrei">
@@ -23,12 +25,14 @@
 <body>
 <header>
     <h1> Magazin de barci </h1>
+
+    <div class="top">
     <nav>
-        <ul>
+        <ul class="meniu">
             <li>
                 <a href="index.html"> Acasa </a>
-                <ul>
-                    <li> <a href="#welcome"> Welcome </a> </li>
+                <ul class="submeniu">
+                    <li> <a href="#prezentare"> Welcome </a> </li>
                     <li> <a href="#orar"> Orar </a> </li>
                     <li> <a href="#contact">Contact</a></li>
                 </ul>
@@ -43,32 +47,67 @@
         </ul>
     </nav>
 
+    <img src="./resurse/imagini/emblema/emblema.jpg" alt="emblema" class="emblema">
+    </div>
+
 </header>
 
 <main>
-    <section id="welcome">
-        <h2> Salutare mateloti!</h2>
-        <p> Sper sa gasiti barca preferata, spor la navigare, atat pe site cat si pe valuri!</p>
-        <p> Noi va oferim : </p>
-        <ol>
-            <li> Profesionalism</li>
-            <li> Calitate</li>
-            <li> Viteaza</li>
-        </ol>
 
-        <p>Catalogul nostru contine o gama variata de produse</p>
-        <ul>
-            <li> Barci
-                <ul>
-                    <li>Barci gonflabile</li>
-                    <li>Barci din aluminiu</li>
-                    <li>Barci de pescuit cu vasle</li>
-                </ul>
-            </li>
-            <li> Yahturi </li>
-            <li> Skijeturi </li>
-        </ul>
-    </section>
+    <div id="container">
+        <section id="prezentare">
+            <h2> Salutare mateloti!</h2>
+            <p> Sper sa gasiti barca preferata, spor la navigare, atat pe site cat si pe valuri!</p>
+            <p> Noi va oferim : </p>
+            <ol>
+                <li> Profesionalism</li>
+                <li> Calitate</li>
+                <li> Viteaza</li>
+            </ol>
+
+            <p>Catalogul nostru contine o gama variata de produse</p>
+            <ul>
+                <li> Barci
+                    <ul>
+                        <li>Barci gonflabile</li>
+                        <li>Barci din aluminiu</li>
+                        <li>Barci de pescuit cu vasle</li>
+                    </ul>
+                </li>
+                <li> Yahturi </li>
+                <li> Skijeturi </li>
+            </ul>
+        </section>
+
+        <section id="tabel">
+            <p>Fusce id sagittis nibh, sed tristique libero. Etiam pulvinar condimentum elit id scelerisque. Integer aliquam magna eget convallis consectetur. Donec eget venenatis orci. Vivamus mattis quam at lobortis lobortis. Aliquam egestas massa eu nisl vehicula posuere. Nullam in dolor tortor. Pellentesque imperdiet ipsum urna, sed porttitor mi malesuada ac. Phasellus accumsan, felis at bibendum ultrices, arcu magna aliquet justo, ultricies ornare velit nulla nec est. Nullam aliquet leo ac nulla euismod, a aliquam enim bibendum. Maecenas eget maximus ante, non faucibus nibh. Donec nulla quam, facilisis eu elit non, finibus egestas nisi.</p>
+        </section>
+
+        <section id="evenimente">
+            <p>Praesent dapibus lobortis ante eu mollis. Curabitur laoreet elit ut purus condimentum varius. Pellentesque aliquam sapien nec orci blandit blandit. Vestibulum eget dapibus mi. Nullam vestibulum elementum nisl ut placerat. In ultricies consequat fringilla. Cras lacinia posuere nibh in efficitur. Nunc turpis felis, pulvinar vel rutrum in, molestie sit amet leo.</p>
+        </section>
+
+        <section id="anunturi">
+            <p>Quisque maximus tempus quam, sit amet pellentesque mauris dictum a. Integer in euismod lorem. Nam malesuada justo ut condimentum tristique. Fusce volutpat in nisl sit amet venenatis. Proin varius fringilla dolor in aliquet. Etiam interdum sagittis massa, id scelerisque ante facilisis sit amet. Duis pharetra id tortor nec rhoncus. Aliquam imperdiet urna urna, in venenatis purus tristique in. Nulla posuere urna vel purus auctor, vitae pretium enim dapibus.</p>
+        </section>
+
+        <section id="utilizatori">
+            <p>Nunc eros neque, ornare eu fermentum sed, efficitur eget dui. Vivamus porta arcu quis dui vulputate tempus. Phasellus gravida cursus dolor eget faucibus. Cras pulvinar, arcu nec dignissim lacinia, diam massa consequat ante, sit amet viverra ante nibh eget risus. Nunc volutpat velit eget urna bibendum, non viverra ligula molestie. Vestibulum eget velit ut ex egestas laoreet. Pellentesque vestibulum dui et fringilla faucibus. Morbi in eros quis eros vehicula tempus quis id est. Donec pulvinar, turpis ut ultricies maximus, sem felis bibendum nisl, id tempor dolor tellus eget libero. Ut sit amet posuere ante, nec iaculis orci.</p>
+        </section>
+
+        <section id="statistici">
+            <p>Aliquam semper interdum maximus. Integer dignissim lacus placerat ante vestibulum, a egestas leo convallis. Etiam ut malesuada odio. Phasellus pulvinar mollis libero, eget molestie libero tristique ac. Pellentesque elit diam, lobortis ornare ex quis, ullamcorper facilisis massa. Morbi vitae quam tempor, vehicula lacus eget, egestas justo. Ut nibh ante, accumsan vel urna vel, varius auctor nibh. Mauris ac dictum nisl. Vestibulum consectetur sagittis accumsan. Donec at elementum erat. Nulla at justo quam. Vivamus condimentum nulla nunc, at vestibulum sem aliquet eget.</p>
+        </section>
+
+        <section id="detalii">
+            <p>Ut mattis massa massa, in consequat est maximus et. Nunc malesuada sit amet quam nec pulvinar. Integer eu efficitur tortor, vel tempor quam. Curabitur non sapien non risus consectetur suscipit at et urna. Nunc tincidunt, justo sit amet ornare porta, felis diam scelerisque eros, sed euismod neque magna quis odio. Vestibulum tortor diam, lobortis et elementum et, porta sed metus. Sed posuere risus nec sem ullamcorper semper. Aliquam turpis nisi, rutrum sed arcu sed, dapibus ullamcorper mi. Duis eget rhoncus dolor. Pellentesque elit purus, molestie vitae euismod ut, euismod quis lectus. Sed eget faucibus tellus. Aenean iaculis elit eget lacus maximus imperdiet ac mattis enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p>
+        </section>
+
+        <section id="diverse">
+            <p>Fusce euismod turpis ac risus porttitor consequat. Nulla interdum, mauris sit amet vestibulum dignissim, leo elit molestie elit, quis pulvinar quam erat et felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc vitae placerat velit. Nullam blandit ac felis ut sollicitudin. Nunc rutrum pretium arcu eu pretium. Quisque euismod dignissim tortor, vitae sagittis neque hendrerit nec. Phasellus fringilla arcu justo, in vulputate turpis facilisis sed. Suspendisse vel velit eget nulla finibus egestas nec eu massa.</p>
+        </section>
+
+    </div>
 
     <figure>
         <h2> Recomandarea lunii </h2>
@@ -169,7 +208,7 @@
         </address>
     </section>
 
-    <a href="index.html"> Inapoi sus &#8593; </a>
+    <a href="index.html" class="buton_sus"> &#129081; </a>
     <p> <small> Copyright &copy; Stan Catalin Andrei <time datetime="2022-02-18"> 18 februarie 2022 </time> </small></p>
 </footer>
 </body>
