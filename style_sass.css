@@ -1,0 +1,69 @@
+.meniu_principal {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-inline-start: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.meniu_principal li {
+  width: 150px;
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: var(--inaltime-buton);
+  border-radius: 12px;
+}
+
+.meniu_principal li a {
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: var(--culoare-principala);
+  text-decoration: none;
+  text-align: center;
+  line-height: var(--inaltime-buton);
+  color: black;
+  font-weight: bold;
+}
+
+.meniu_principal .first:hover {
+  box-shadow: inset 0 0 11px 11px var(--culoare-doi);
+  transition: box-shadow 0.2s linear;
+}
+
+.meniu_principal .second:hover {
+  box-shadow: inset 0 0 11px 11px var(--culoare-doi);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.meniu_principal > li:hover > .submeniu {
+  display: block;
+}
+
+.submeniu {
+  display: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  height: var(--inaltime-buton);
+  list-style-type: none;
+}
+
+@keyframes animatie_buton_second {
+  0% {
+    background: black;
+  }
+  50% {
+    background: green;
+  }
+  100% {
+    background: white;
+  }
+}
+
+/*# sourceMappingURL=style_sass.css.map */
