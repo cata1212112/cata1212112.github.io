@@ -76,7 +76,7 @@
     animation-timing-function: linear;
   }
 }
-
+@media (max-width: 3000px) {
   @keyframes sageata {
     0% {
       transform: translateX(-500%);
