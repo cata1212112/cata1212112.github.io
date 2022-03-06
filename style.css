@@ -25,13 +25,9 @@ body {
 }
 
 #emblema {
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
-}
-
-.top {
-    display: flex;
 }
 
 #container {
