@@ -3,9 +3,11 @@
   .meniu_principal {
     display: flex;
     margin: 0;
-    padding-inline-start: 0;
     z-index: 10;
     position: relative;
+  }
+  .meniu_principal {
+    padding-left: 0;
   }
 
   .meniu_principal {
@@ -16,7 +18,6 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
-      height: 0;
       height: var(--inaltime-buton);
       border-radius: 12px;
 
@@ -232,7 +233,6 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
-      height: 0;
       height: var(--inaltime-buton);
       border-radius: 12px;
     }
